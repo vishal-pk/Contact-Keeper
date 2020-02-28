@@ -43,19 +43,19 @@ const Register=(props)=>{
 		<label>REGISTER</label>
 			<form onSubmit={onSubmit}>
 				<div className="form-group">
-				<input type="text" placeholder="name" name="name" value={name} onChange={onChange}/> 
+				<input type="text" className="form-control" placeholder="name" name="name" value={name} onChange={onChange}/> 
 				</div>
 				
 				<div className="form-group">
-				<input type="email" placeholder="email" name="email" value={email} onChange={onChange}/> 
+				<input type="email" className="form-control"  placeholder="email" name="email" value={email} onChange={onChange}/> 
 				</div>
 				
 				<div className="form-group">
-				<input type="password" placeholder="password" name="password" value={password} onChange={onChange}/> 
+				<input type="password" className="form-control"  placeholder="password" name="password" value={password} onChange={onChange}/> 
 				</div>
 				
 				<div className="form-group">
-				<input type="password" placeholder="password2" name="password2" value={password2} onChange={onChange}/> 
+				<input type="password" className="form-control"  placeholder="password2" name="password2" value={password2} onChange={onChange}/> 
 				</div>
 				
 				<div className="form-group">

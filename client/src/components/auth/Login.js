@@ -47,7 +47,7 @@ const Login=(props)=>{
 		
 		<div className="container-login">
 			
-		<div class="col-md-6 col-sm-12">
+		<div className="col-md-6 col-sm-12">
 		
 			<form onSubmit={onSubmit}>
 				

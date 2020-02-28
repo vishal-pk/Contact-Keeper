@@ -1,4 +1,5 @@
-import React,{useReducer,useState} from "react";
+//eslint-disable
+import React,{useReducer} from "react";
 import authContext from "./authContext";
 import axios from "axios";
 import setAuthToken from "../../utils/setAuthToken";
@@ -34,7 +35,7 @@ const register=async(formData)=>{
 		dispatch({type:REGISTER_SUCCESS,payload:res.data});
 		loadUser();
 	}catch(err){
-				console.log(err.response.data.msg);
+				
 				dispatch({type:REGISTER_FAIL,payload:err.response.data.msg});
 	}
 }
@@ -50,14 +51,13 @@ const login=async(formData)=>{
 		dispatch({type:LOGIN_SUCCESS,payload:res.data});
 		loadUser();
 	}catch(err){
-				console.log(err.response.data.msg);
+				
 				dispatch({type:LOGIN_FAIL,payload:err.response.data.msg});
 	}
 }
 	
 const loadUser=async()=>{
 	if(localStorage.token){
-		console.log(localStorage.token);
 		setAuthToken(localStorage.token);
 	}
 	try{

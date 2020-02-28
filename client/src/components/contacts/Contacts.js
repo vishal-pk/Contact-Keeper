@@ -14,7 +14,7 @@ const Contacts=()=>{
 	},[])
 	const {isAuthenticated}=authContext;
 	if(contacts.length===0)
-		return(<h4>add contact</h4>)
+		return(<h4>No Contacts Availabe</h4>)
 	else if(isAuthenticated)
 	return(
 		<Fragment>
@@ -31,5 +31,7 @@ const Contacts=()=>{
 					</CSSTransition>) ) }
 			</TransitionGroup>
 		</Fragment>)
+		else
+		return(<div></div>)
 }
 export default Contacts;

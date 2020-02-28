@@ -11,13 +11,9 @@ const Navbar=({title,icon})=>{
 	}
 	const authLinks=(
 		<Fragment>
-		<li><h5>{user && user.name} </h5></li>
+		<li><a onClick={onLogout} href="#!" className="nav-link disabled">{user && user.name}</a></li>
 		<li className="nav-item active float-right">
-			<a onClick={onLogout} href="#!">
-				<i className="fas fa-sign-sign-out-alt">
-				<span className="hide-sm"><h6>Logout</h6></span>
-				</i>
-			</a>
+			<a onClick={onLogout} href="#!" className="nav-link">Logout</a>
 		</li>
 		</Fragment>
 	);
@@ -26,21 +22,21 @@ const Navbar=({title,icon})=>{
 	const guestLinks=(
 		<Fragment>
 		<li className="nav-item active">
-           <Link  style={{color:"black"}} to="/register"><a className="nav-link">Register</a></Link> 
+           <Link  className="nav-link" to="/register">Register</Link> 
 		</li>
 		
 		<li className="nav-item active">
-			<Link style={{color:"black"}}  to="/login"><a className="nav-link">Login</a></Link>
-      </li>
+			<Link className="nav-link"  to="/login">Login</Link>
+      	</li>
 		</Fragment>
 	);
 	
 	return(
-		<Fragment>
-			<div >
+		
+		<div >
 			<nav className="navbar navbar-expand-lg navbar-light bg-light">
 				<a className="navbar-brand" href="#">Contact Keeper</a>
-					<div classname="collapse navbar-collapse" id="navbarSupportedContent">
+					<div className="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul className="navbar-nav">
 							{
 								isAuthenticated ? authLinks : guestLinks
@@ -49,7 +45,7 @@ const Navbar=({title,icon})=>{
 			  </div>
 			</nav>
 		</div>
-		</Fragment>)
+		)
 
 }
 

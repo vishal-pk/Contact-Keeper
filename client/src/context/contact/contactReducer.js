@@ -1,6 +1,5 @@
+//eslint-disable
 import {ADD_CONTACT,GET_CONTACTS,CLEAR_CONTACTS,DELETE_CONTACT,SET_CURRENT,CLEAR_CURRENT,UPDATE_CONTACT,FILTER_CONTACTS,CONTACT_ERROR,CLEAR_FILTER} from "../Types";
-
-
 export default (state,action)=>{
 	switch(action.type){
 		case GET_CONTACTS:

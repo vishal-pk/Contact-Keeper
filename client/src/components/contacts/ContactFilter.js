@@ -20,7 +20,7 @@ const ContactFilter=()=>{
 	}
 	return(
 		<form>
-			<input ref={text} onChange={onChange} type="text" placeholder="Filter Contacts"/>
+			<input ref={text} onChange={onChange} type="text" className="form-control" placeholder="Filter Contacts"/>
 		</form>	
 	)
 	
