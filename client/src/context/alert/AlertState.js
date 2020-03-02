@@ -23,7 +23,7 @@ const setAlert=(msg,type,timeout=5000)=>{
 
 return (
 	<AlertContext.Provider value={{alerts:state,setAlert}}>
-	{props.children};
+	{props.children}
 	</AlertContext.Provider>
 )
 };

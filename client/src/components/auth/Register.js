@@ -39,7 +39,10 @@ const Register=(props)=>{
 		
 	}
 	return(
-		<div className="form-container">
+		<div className="container">
+			<div className="row">
+				<div className="col-md-4"></div>
+				<div className="col-md-4">
 		<label>REGISTER</label>
 			<form onSubmit={onSubmit}>
 				<div className="form-group">
@@ -63,6 +66,8 @@ const Register=(props)=>{
 				</div>
 				
 			</form>
+			</div>
+			</div>
 		</div>
 	
 	)

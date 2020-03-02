@@ -45,29 +45,39 @@ const Login=(props)=>{
 	if (!(isAuthenticated))
 	return(
 		
-		<div className="container-login">
-			
-		<div className="col-md-6 col-sm-12">
+		<div className="container">
+			<div className="row">
+				<div className="col-md-4"></div>
+		<div className="col-md-4 ">
 		
 			<form onSubmit={onSubmit}>
 				
 				
-				<div className="form-group">
-					<label>Login</label>
+				{/* <div className="form-group">
+					<label>Login
 					<input type="email" placeholder="email" className="form-control" name="email" value={email} onChange={onChange} required/> 
-				</div>
-				
+					</label>
+				</div> */}
 				
 				<div className="form-group">
-					<lablel>Password</lablel>
-					<input type="password" className="form-control" placeholder="password" name="password" value={password} onChange={onChange} required/> 
+					<lablel>Login
+					<input type="email" className="form-control" placeholder="Email" name="email" value={email} onChange={onChange} required/> 
+					</lablel>
 				</div>
+				
+				<div className="form-group">
+					<lablel>Password
+					<input type="password" className="form-control" placeholder="password" name="password" value={password} onChange={onChange} required/> 
+					</lablel>
+				</div>
+				
 				
 				<div className="form-group">
 					<input type="submit"  className="btn btn-primary" value="Login"/>
 				</div>
 				
 			</form>
+		</div>
 		</div>
 	</div>
 	

@@ -76,7 +76,7 @@ const clearFilter=()=>{
 
 return (
 	<contactContext.Provider value={{contacts:state.contacts,filtered:state.filtered,addContact,deleteContact,current:state.current,clearCurrent,updateContact,setCurrent,filterContacts,getContacts,clearFilter}}>
-	{props.children};
+	{props.children}
 	</contactContext.Provider>
 )
 };

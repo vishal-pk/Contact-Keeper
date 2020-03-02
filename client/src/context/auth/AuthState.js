@@ -92,7 +92,7 @@ return (
 				logout
 			
 		}}>
-	{props.children};
+	{props.children}
 	</authContext.Provider>
 )
 };
